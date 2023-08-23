@@ -1,6 +1,6 @@
 {
   "name": "@porto-o/blog",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "description": "Personal blog of Ismael Porto - https://blog.ismaelporto.com - Powered by Quartz ",
   "private": true,
   "version": "4.0.9",
   "type": "module",
