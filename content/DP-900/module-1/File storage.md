@@ -11,7 +11,7 @@ tags:
 There are tons of data formats, from _docx_ documents through _.py_ files. However, we must know that the data format will depend on the following factors:
 
 1. If it is structured, semi-structured or unstructured data
-2. The applications of that content, for instnace, read, write, etc.
+2. The applications of that content, for instance, read, write, etc.
 3. The need of readability, if it is for human reading or not.
 
 ## Common files formats
