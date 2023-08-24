@@ -13,9 +13,7 @@ A database is a **file system** on which files are stored or a **dedicated syste
 There are several types of databases, for instance:
 
 * [[#Relational databases]]
-* Non-relational databases
-* Graph databases
-* And so on...
+* [[#Non-relational databases]]
 ---
 ## Relational databases
 
