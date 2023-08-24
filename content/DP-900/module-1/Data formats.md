@@ -1,13 +1,8 @@
 ---
 title: Data formats
-year: 2023
-favorite: true
-cast:
-- Ismael Porto
 draft: false
 tags:
 - DP-900
-image: https://media.licdn.com/dms/image/D5603AQFxT0B0LJCxmA/profile-displayphoto-shrink_800_800/0/1691390005964?e=1698278400&v=beta&t=KlhnI1hc2QabiEjNE0XzE_xT3mCesnsGzv5YA03p15g
 ---
 
 # What is data?
