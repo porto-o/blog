@@ -1,9 +1,13 @@
 ---
 title: Data formats
+year: 2023
+favorite: true
+cast:
+- Ismael Porto
 draft: false
 tags:
-- dp900
-- module-1
+- DP-900
+image: https://media.licdn.com/dms/image/D5603AQFxT0B0LJCxmA/profile-displayphoto-shrink_800_800/0/1691390005964?e=1698278400&v=beta&t=KlhnI1hc2QabiEjNE0XzE_xT3mCesnsGzv5YA03p15g
 ---
 
 # What is data?
@@ -34,3 +38,16 @@ For instance, a customer can have **_phone and email for contact_**, while other
 
 Data in raw format, **without structure**. For example, images, audio, music, video, etc.
 
+_INSERT IMAGE_
+
+## Conclusion
+
+There is not such a thing as “better data” since every organization store data in these different ways. For instance, to record transactions.
+
+There are **two broad** categories of data store in common use:
+
+1. File stores (Next topic)
+2. Databases
+
+---
+Next topic ➡️ [[File storage]]
