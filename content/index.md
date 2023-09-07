@@ -9,3 +9,5 @@ Here you can find some of my nerdy notes. For instance, right now I'm working on
 These are my personal notes, so there might be errors.
 
 For DP-900 notes, start [[Data formats|here]]
+
+For Advanced databases college course notes, start [[Introduction to NoSQL Systems|here]]

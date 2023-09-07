@@ -2,7 +2,7 @@
 title: Data formats
 draft: false
 tags:
-- DP-900
+  - DP-900
 ---
 
 # What is data?
