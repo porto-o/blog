@@ -32,3 +32,6 @@ This type of NoSQL database uses a hash function to store unique keys **along wi
 1. Cassandra
 2. BigTable
 3. Hbase
+
+---
+Next topic ➡️ 
