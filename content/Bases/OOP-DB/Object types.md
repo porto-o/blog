@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: false
 title: Object Types
 tags:
   - Databases
@@ -19,7 +19,7 @@ Imagine you have a jelly mould. This mould will help us creating **tons of jelli
 
 ![[Object-types-illustration.png]]
 
-### Types
+### Types of UDT's
 ---
 We have two types of UDT's:
 
@@ -31,7 +31,7 @@ We have two types of UDT's:
 
 ## How can we create it?
 ---
-Oracle uses a variant of SQL standard called as **PL/SQL**, therefore the syntax can change a little bit. We create **simple** object types using the following syntax:
+Oracle uses a variant of SQL standard called **PL/SQL**, therefore the syntax can change a little bit. We create **simple** object types using the following syntax:
 
 ```PLSQL
 CREATE OR REPLACE TYPE nameObjectType AS OBJECT (
@@ -69,3 +69,29 @@ CREATE TABLE Jugador (
 );
 /
 ```
+
+![[Pasted image 20230926122319.png]]
+
+Or making a table with the same attributes as the object:
+
+```PLSQL
+CREATE OR REPLACE TYPE tipoEmpleado AS OBJECT (
+	DNI NUMBER,
+	nombre VARCHAR2 (30),
+	fecha_nac DATE
+);
+
+CREATE TABLE Empleado OF tipoEmpleado;
+```
+
+The code will perform 2 tasks:
+
+1. Create an object called *tipoEmpleado* with some attributes
+2. Create a table that has the same attributes as the *tipoEmpleado* object, using the clause **OF**
+
+| --- | --- |
+| --- | --- |
+| ![[Pasted image 20230926122113.png]]    | ![[Pasted image 20230926122135.png]]    |
+
+---
+Next topic ➡️ [[Modifying Types]]
