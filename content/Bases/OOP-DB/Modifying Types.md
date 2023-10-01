@@ -90,5 +90,46 @@ ALTER TYPE objectType ADD MEMBER { FUNCTION | PROCEDURE } methodName RETURN type
 After the declaration we must create the body of that method, we will achieve this following this syntax:
 
 ```PLSQL
-CREATE OR REPLACE TYPE BODY objectType AS .............
+CREATE OR REPLACE TYPE BODY objectType AS
+	MEMBER FUNCTION nameFunction
+	RETURN typeOfReturn
+	IS
+		BEGIN
+			... Logic
+		End nameFunction;
+	MEMBER FUNCTION nameFunction2
+	RETURN typeOfReturn
+	IS
+		BEGIN
+			...
+		END nameFunction2;
+	MEMBER PROCEUDRE nameProcedure
+	IS 
+		BEGIN
+			...
+		END nameProcedure
+	END;
 ```
+
+As you've seen we can create multiple functions or procedures and then adding the body in just 1 statements.
+
+
+
+# Deleting types
+---
+To remove a UDT we must include the modifies *FORCE* to avoid conflicts with the instances of the type. This might create *invalid types* in the bd schema.
+
+```PLSQL
+DROP TYPE typeName FORCE;
+```
+
+Or if we only need to remove some attributes of the object, we can use the following syntax:
+
+```PLSQL
+ALTER TYPE nameType DROP ATTRIBUTE attributeName CASCADE [NOT] INCLUDING TABLE DATA;
+```
+
+The code will remove the attribute of the object and then **propagate it through all the instances of the object**.
+
+---
+Next topic ➡️ [[Inheritance]]
